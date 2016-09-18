@@ -16,7 +16,6 @@ El índice de contenidos que vamos a estudiar será:
 
 .. toctree::
    :maxdepth: 2
-   :numbered:
    
    introduccion/index
    windows/index
