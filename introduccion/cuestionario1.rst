@@ -4,11 +4,9 @@ Cuestionario 1
 1. ¿Cuáles son los datos mínimos para poder configurar la interface de red de un ordenador que está conectado a una red y tiene acceso a internet?
 
 2. Define los siguientes conceptos:
-
 	* Mascara de subred
     * Puerta de enlace
     * Servidor DNS
-
 
 3. ¿Qué instrucción utilizamos para averiguar la dirección ip en windows?¿Y en Linux?. Escribe la dirección ip del ordenador de clase y el de tu casa. ¿Es una dirección pública o privada?
 
@@ -19,6 +17,8 @@ Cuestionario 1
 6. Explica de manera detalla el mecanismo que posibilita a todos los ordenadores de una red local tener acceso a internet.
 
 7. Dado el siguiente esquema de red, responde las siguientes preguntas:
+
+.. image:: img/cuestionario1.png
 
 	* El router tiene dos direcciones, indica cuál es la pública y cuál la privada.
 	* Indica la configuración de red (dirección ip, mascara de subred, puerta de enlace y como servidor DNS indica el servidor DNS público ofrecido por Google) de dos ordenadores de la red.
