@@ -16,7 +16,7 @@ El índice de contenidos que vamos a estudiar será:
 
 .. toctree::
    :maxdepth: 3
-   
+   :caption: Servicios en red
   
    intro
    
