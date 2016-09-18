@@ -20,10 +20,5 @@ El índice de contenidos que vamos a estudiar será:
    :caption: Servicios en red
 
    intro
-   
-.. toctree::
-   :maxdepth: 2
-   :numbered:
-   :caption: Servidores Windows
-
    u1/intro
+   u1/dhcp
