@@ -6,54 +6,31 @@
 Servicios en red
 ================
 
-$project
-========
+El módulo profesional de **Servicios en Red** se imparte durante el segundo curso del `Ciclo Formativo de Grado Medio de Sistemas Microinformáticos y Redes (SMR)`_.
 
-$project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+De acuerdo a la normativa reguladora del ciclo formativo, el módulo profesional de Servicios en red se imparte durante el segundo curso y tiene asignadas un total de 147 horas, a razón de 7 horas semanales durante 21 semanas.
 
-Look how easy it is to use:
+.. _Ciclo Formativo de Grado Medio de Sistemas Microinformáticos y Redes (SMR): http://www.aapri.es/curriculo/fp/smr
 
-    import project
-    # Get your stuff done
-    project.do_stuff()
+El índice de contenidos que vamos a estudiar será:
 
-Features
---------
-
-- Be awesome
-- Make things faster
-
-Installation
-------------
-
-Install $project by running:
-
-    install project
-
-Contribute
-----------
-
-- Issue Tracker: github.com/$project/$project/issues
-- Source Code: github.com/$project/$project
-
-Support
--------
-
-If you are having issues, please let us know.
-We have a mailing list located at: project@google-groups.com
-
-License
--------
-
-The project is licensed under the BSD license.
+* :ref:`unidad1`
+* :ref:`unidad2`
 
 
-Contents:
+.. _unidad1:
 
 .. toctree::
    :maxdepth: 2
+   :caption: Unidad 1: Introducción a los servicios en red y puesta en marcha del entorno de trabajo
 
+   u1/index
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Unidad 2: Instalación de servicios de configuración dinámica de sistemas
+
+   u1/index
 
 
 Indices and tables
