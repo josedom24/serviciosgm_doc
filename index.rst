@@ -15,7 +15,7 @@ De acuerdo a la normativa reguladora del ciclo formativo, el módulo profesional
 El índice de contenidos que vamos a estudiar será:
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :numbered:
    
    introduccion/index
