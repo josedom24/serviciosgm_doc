@@ -14,31 +14,10 @@ De acuerdo a la normativa reguladora del ciclo formativo, el módulo profesional
 
 El índice de contenidos que vamos a estudiar será:
 
-* :ref:`unidad1`
-* :ref:`unidad2`
-
-
-.. _unidad1:
-
 .. toctree::
    :maxdepth: 2
-   :caption: Unidad 1
 
-   u1/index
-
-.. _unidad2:
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Unidad 2
-
-   u2/index
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+   intro
+   strings
+   datatypes
+   numeric
