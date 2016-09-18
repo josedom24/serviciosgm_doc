@@ -16,6 +16,8 @@ El índice de contenidos que vamos a estudiar será:
 
 .. toctree::
    :maxdepth: 2
+   :numbered:
+   :caption: Unidad 1
 
    intro
    strings
