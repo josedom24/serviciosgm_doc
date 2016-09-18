@@ -19,3 +19,5 @@ El índice de contenidos que vamos a estudiar será:
    :numbered:
    
    intro
+   u1/intro
+   u1/dhcp
