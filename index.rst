@@ -15,10 +15,9 @@ De acuerdo a la normativa reguladora del ciclo formativo, el módulo profesional
 El índice de contenidos que vamos a estudiar será:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :numbered:
-   :caption: Servicios en red
-
+   
    intro
    u1/intro
    u1/dhcp
