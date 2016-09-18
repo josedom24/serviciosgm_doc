@@ -16,14 +16,14 @@ El índice de contenidos que vamos a estudiar será:
 
 .. toctree::
    :maxdepth: 3
-   :numbered:
+   
    
    intro
+   
+.. toctree::
+   :maxdepth: 3
+   :caption: Servidores Windows
    u1/intro
    u1/dhcp
   
-.. toctree::
-   :maxdepth: 3
-   :numbered:
-
-   u1/dhcp
+   
