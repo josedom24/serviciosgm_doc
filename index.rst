@@ -20,4 +20,4 @@ El índice de contenidos que vamos a estudiar será:
    
    intro
    u1/intro
-   u1/dhcp
+  
