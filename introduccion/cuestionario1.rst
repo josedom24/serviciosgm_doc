@@ -19,7 +19,7 @@ Cuestionario 1
 
 7. Dado el siguiente esquema de red, responde las siguientes preguntas:
 
-	.. image:: img/cuestionario1.png
+	.. image:: img/cuestionario1.jpg
 
 	* El router tiene dos direcciones, indica cuál es la pública y cuál la privada.
 	* Indica la configuración de red (dirección ip, mascara de subred, puerta de enlace y como servidor DNS indica el servidor DNS público ofrecido por Google) de dos ordenadores de la red.
