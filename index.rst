@@ -21,3 +21,8 @@ El índice de contenidos que vamos a estudiar será:
    intro
    u1/intro
   
+.. toctree::
+   :maxdepth: 3
+   :numbered:
+
+   u1/dhcp
