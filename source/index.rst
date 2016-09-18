@@ -22,15 +22,17 @@ El índice de contenidos que vamos a estudiar será:
 
 .. toctree::
    :maxdepth: 2
-   :caption: Unidad 1: Introducción a los servicios en red y puesta en marcha del entorno de trabajo
+   :caption: Unidad 1
 
    u1/index
+
+.. _unidad2:
 
 .. toctree::
    :maxdepth: 2
-   :caption: Unidad 2: Instalación de servicios de configuración dinámica de sistemas
+   :caption: Unidad 2
 
-   u1/index
+   u2/index
 
 
 Indices and tables
