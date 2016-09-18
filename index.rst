@@ -17,9 +17,13 @@ El índice de contenidos que vamos a estudiar será:
 .. toctree::
    :maxdepth: 2
    :numbered:
-   :caption: Unidad 1
+   :caption: Servicios en red
 
    intro
-   strings
-   datatypes
-   numeric
+   
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+   :caption: Servidores Windows
+
+   u1/intro

@@ -1,10 +1,5 @@
-Introducción a los servicios en red
-===================================
+Servidores Windows
+==================
 
-Repaso a Redes
---------------
-
-Introducción a los servicios de red
------------------------------------
 
 
