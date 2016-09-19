@@ -1,7 +1,7 @@
 Introducción a los servicios en red
 ===================================
 
-En este primer apartados vamos arealizar un respaso a varios conceptos sobre redes de ordenadores y vamos a introducir el concepto de **Servicio de red**.
+En este primer apartado vamos a realizar un repaso a varios conceptos sobre redes de ordenadores y vamos a introducir el concepto de **Servicio de red**.
 
 .. toctree::
    
