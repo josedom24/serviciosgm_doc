@@ -19,4 +19,5 @@ El índice de contenidos que vamos a estudiar será:
    
    introduccion/index
    windows/index
-   
+
+`Calificaciones del módulo <https://docs.google.com/spreadsheets/d/1NyEFV7pzVpdlfHH2BTOygvbb1sJzGuzglL2zLW0pWLc/pubhtml#>`_   
