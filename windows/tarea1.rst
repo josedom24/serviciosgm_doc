@@ -1,4 +1,4 @@
-Tarea: Instalación del entorno de red
+Tarea 1: Instalación del entorno de red
 =====================================
 
 .. image:: img/esquema_red2.png
@@ -26,7 +26,7 @@ Las características de estas máquinas serán las siguientes:
 
 .. warning::
 
-    **Para entrega...**
+    **Para entregar...**
 
     Entrega una captura de pantalla donde se vea la pantalla principal de VirtualBox con todas las características de la máquina que acabas de crear.
 
@@ -60,7 +60,7 @@ En el sistema Linux, modificamos el archivo ``/etc/hostname``.
 
 .. warning::
 
-    Para entregar...
+    **Para entregar...**
     
     Entrega una captura de pantalla donde se vea una ventana Windows donde se este ejecutando la máquina virtual creada y la ejecución en una ventana de comandos (cmd) del comando ipconfig para que se vea la configuración de red.
 
@@ -76,7 +76,7 @@ La interfaz de red la configuramos de forma estática:::
 
 .. warning::
 
-    Para entregar...    
+    **Para entregar...**    
 
     * Entrega dos capturas de pantalla: una donde se vea el cliente Windows con una consola de texto con el comando ipconfig ejecutado, de esta manera podremos ver la configuración de red, otra donde se vea el cliente Linux con una consola de comando donde se vea ejecutado la instrucción ifconfig, para ver la configuración de red.
     * Entrega una captura de pantalla donde se compruebe que se puede hacer ping desde los dos clientes.
@@ -86,7 +86,7 @@ La interfaz de red la configuramos de forma estática:::
 
 Para ello hay que seguir los siguientes pasos:
 
-    1. Incio -> Herramientas administrativas -> Administrador del servidor
+    1. Inicio -> Herramientas administrativas -> Administrador del servidor
     2. Agregar roles -> Servicios de acceso y directiva de redes
     3. En la pantalla servicios de rol escoge Enrutamiento -> Instalar
     4. En administardor de servidor, en la ventana izquierda, desplegamo la pestañe de Roles, hasta que veamos Enrutamiento y acceso
@@ -94,6 +94,6 @@ Para ello hay que seguir los siguientes pasos:
 
 .. warning::
 
-    Para entregar...    
+    **Para entregar...**    
 
     Entrega dos capturas de pantalla de los clientes donde se vea que están navegando por internet.
