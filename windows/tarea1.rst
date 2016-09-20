@@ -1,5 +1,5 @@
 Tarea 1: Instalación del entorno de red
-=====================================
+=======================================
 
 .. image:: img/esquema_red2.png
 
