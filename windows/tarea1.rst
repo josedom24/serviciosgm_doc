@@ -28,7 +28,7 @@ Las características de estas máquinas serán las siguientes:
 
     **Para entregar...**
 
-    Entrega una captura de pantalla donde se vea la pantalla principal de VirtualBox con todas las características de la máquina que acabas de crear.
+    Entrega capturas de pantalla donde se vea la pantalla principal de VirtualBox con todas las características de las máquinas que acabas de crear.
 
 Instalación y configuración de los sistemas operativos
 ------------------------------------------------------
