@@ -16,7 +16,7 @@ Las caracteristicas de esta máquina será:
     * Disco duro:10 Gb
     * Dos tarjetas de red: Un **modo puente** y otra *Red Interna*.
 
-* **Dos clientes: unoinstalado Windos y otro con Linux.
+* **Dos clientes**: uno instalado con un sistema operativo Windows y otro con Linux.
 
 Las características de estas máquinas serán las siguientes:
 
@@ -30,44 +30,42 @@ Las características de estas máquinas serán las siguientes:
 
     Entrega una captura de pantalla donde se vea la pantalla principal de VirtualBox con todas las características de la máquina que acabas de crear.
 
+Instalación y configuración de los sistemas operativos
+------------------------------------------------------
 
+.. note::
 
-**El servidor Windows Server** tiene dos tarjetas virtuales de red:
+    Antés de continuar con la instalación de las máquinas tenemos que decir que **nombres** vamos a utilizar para identificarlos.
 
-* Una que hemos configurado modo puente, y que está configurada para que reciba la configuración en modo automático.
-* Una que hemos configurado como "Red Interna", que configuramos de forma estática con las siguientes características:
+Después de instalar los sistemas operativos, tienes que instalar las *"Guests Additions"*. A continución tenemos que configurar los siguientes parámetros:
 
-**El cliente Windows** tiene una tarjeta de red, configurada en modo 'Red Interna' que debes configurar de forma estática.
+1. El nombre de las máquinas: lo podemos hacer durante la instalación del sistema o después de la instalación, para ello en el sistema Windows:
 
-**El cliente linux** tiene una tarjeta de red, configurada en modo 'Red Interna' que debes configurar de forma estática.
+    Inicio -> Botón derecho en Equipo -> Propiedades -> Cambiar configuración -> Cambiar ...
 
+En el sistema Linux, modificamos el archivo ``/etc/hostname``.
 
+2. Para que no tengamos problemas de conectividades vamos a desconectar el cortafuego del windows Server, para ello:
 
-Dirección IP: 192.168.0.1.
-Mascara de red: 255.255.255.0
+    Inicio -> Herramientas administrativas -> Firewall de Windows con seguridad avanzada -> Y desactivamos los tres perfiles (dominio, privado, público),.
 
-Para que no tengamos problemas de conectividades vamos a desconectar el cortafuego del windows 2008, para ello:
+3. Configuración de las interfaces de red.
 
-	Inicio -> Herramientas administrativas -> Firewall de Windows con seguridad avanzada -> Y desactivamos los tres perfiles (dominio, privado, público),.
+* En el **Windows Server**:
+    * La primera tarjeta la configuramos de forma dinamica en modo automática.
+    * La segunda tarjeta la configuramos con estas caracteristicas:::
 
+        Dirección IP: 192.168.0.1
+        Mascara de red: 255.255.255.0
 
-1) El servidor Windows 2008, lo primero es ponerle el nombre que hemos decidido:
+* En los clintes
 
-Inicio -> Botón derecho en Equipo -> Propiedades -> Cambiar configuración -> Cambiar ...
+    La interfaz de red la configuramos de forma estática:::nfiguración:
 
- 
-
- 
-
-
-4) En el cliente Windows 7 configuramos el nombre que hemos decidido.
-
-5) El cliente Windows tiene una tarjeta de red, configurada en modo 'Red Interna' que debes configurar de forma estática, con la siguiente configuración:
-
-IP: 192.168.0.2
-Máscara: 255.255.255.0
-Puerta de enlace: 192.168.0.1
-Dns: 8.8.8.8
+        IP: 192.168.0.2 (Windows) - 192.168.0.3 (Linux)
+        Máscara: 255.255.255.0
+        Puerta de enlace: 192.168.0.1
+        Dns: 192.168.102.2
 
 6) En el cliente Linux configuramos el nombre que hemos decidido.
 
@@ -100,7 +98,7 @@ PRÁCTICA: INSTALACIÓN DE MÁQUINAS VIRTUALES
 
 
 
-3) Instala Windows 2008 Server en la máquina que acabas de crear. Cuando finalices instala las "Guests Additions".
+3) Instala Windows 2008 Server en la máquina que acabas de crear. 
 
 Para entregar...
 

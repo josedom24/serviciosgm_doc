@@ -1,7 +1,7 @@
 Servidores Windows
 ==================
 
-Servidores Windows
+En este apartado vamos a trabajar con un servidor con un sistema operativo Windows Server, donde vamos a ir instalando y configurando los distintos servicios.
 
 .. toctree::
 
