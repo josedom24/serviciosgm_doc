@@ -1,8 +1,35 @@
+Tarea: Instalación del entorno de red
+=====================================
+
+.. image:: img/esquema_red2.png
+
+Configuración de VirtualBox
+---------------------------
+
 Este es el esquema de red con el que queremos trabajar. Vamos a utilizar VirualBox para simular las máquinas que necesitamos en nuestro esquema de trabajo, de esta forma necesitaremos 3 máquinas virtuales:
 
-* **Servidor Windows Server**: Donde instalaremos Windows 2008 server. 
-Un Cliente, donde se instalará Windows 7 
-    Un cliente, donde se instalará Ubuntu
+* **Servidor Windows Server**: Donde instalaremos Windows 2008 server.
+
+Las caracteristicas de esta máquina será:
+
+    * RAM: 512 Mb
+    * Disco duro:10 Gb
+    * Dos tarjetas de red: Un **modo puente** y otra *Red Interna*.
+
+* **Dos clientes: unoinstalado Windos y otro con Linux.
+
+Las características de estas máquinas serán las siguientes:
+
+    * RAM: 512 Mb
+    * Disco duro:5 Gb
+    * Una tarjeta de red en modo *Red Interna*.
+
+.. warning::
+
+    **Para entrega...**
+
+    Entrega una captura de pantalla donde se vea la pantalla principal de VirtualBox con todas las características de la máquina que acabas de crear.
+
 
 
 **El servidor Windows Server** tiene dos tarjetas virtuales de red:
@@ -70,18 +97,7 @@ PRÁCTICA: INSTALACIÓN DE MÁQUINAS VIRTUALES
 
 
 
-1) Vamos a crear una nueva máquina donde vamos a instalar el servidor con Windows 2008 Server:
 
-    Pulsamos el botón "Nueva" para iniciar el asistente de creación de la máquina virtual.
-    Le ponemos un nombre significativo y elegimos el tipo de sistema operativo: Windows 2008
-    Asignamos la cantidad de memoria RAM de la máquina, le vamos a poner 512Mb si luego comprobamos que es pequeña la podemos aumentar.
-    Creamos un nuevo disco virtual, del tipo de almacenamiento de expansión dinámica y un tamaño de 20 Gb.
-    Configura en la sección "Almacenamiento" para que la unidad de CD/DVD se cargue con la imagen ISO de Windows 2008 Server aportada por el profesor.
-    Configura las redes de esta máquina siguiendo las indicaciones del documento: Esquema de Red
-
-Para entregar...
-
-Entrega una captura de pantalla donde se vea la pantalla principal de VirtualBox con todas las características de la máquina que acabas de crear.
 
 
 3) Instala Windows 2008 Server en la máquina que acabas de crear. Cuando finalices instala las "Guests Additions".
