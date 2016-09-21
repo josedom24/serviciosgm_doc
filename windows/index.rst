@@ -6,4 +6,4 @@ En este apartado vamos a trabajar con un servidor con un sistema operativo Windo
 .. toctree::
 
    tarea1
-   dhcp
+   dhcp/index
