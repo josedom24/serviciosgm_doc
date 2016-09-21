@@ -9,13 +9,13 @@ Cuestionario 2
 
 4. Relaciona los siguientes términos
 
-============	=============================================================
-1. Ámbito 		a.Tiempo en el que el cliente puede utilizar la configuración
-2. Rango 		b. Direcciones IP que el servidor no va a conceder.
-3. Concesión 	c. Agrupamiento administrativo de clientes
-4. Reserva 		d. Permite conceder una misma configuración a un mismo equipo
-5. Exclusión 	e. Direcciones IP que puede conceder el servidor DHCP
-============    =============================================================
+============ =============================================================
+1. Ámbitoa   a.Tiempo en el que el cliente puede utilizar la configuración
+2. Rango     b. Direcciones IP que el servidor no va a conceder.
+3. Concesión c. Agrupamiento administrativo de clientes
+4. Reserva   d. Permite conceder una misma configuración a un mismo equipo
+5. Exclusión e. Direcciones IP que puede conceder el servidor DHCP
+============ =============================================================
 
 5. Al configurar un servidor DHCP tenemos que tener en cuenta estos dos aspectos:
 
