@@ -20,7 +20,7 @@ El índice de contenidos que vamos a estudiar será:
    introduccion/index
    
 Servidores Windows
-==================
+------------------
 
 .. toctree::
    :maxdepth: 2
