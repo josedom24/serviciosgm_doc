@@ -8,6 +8,7 @@ Cuestionario 2
 3. Enumera los distintos parámetros que un servidor DHCP puede conceder a un cliente.
 
 4. Relaciona los siguientes términos
+
 ============	=============================================================
 1. Ámbito 		a.Tiempo en el que el cliente puede utilizar la configuración
 2. Rango 		b. Direcciones IP que el servidor no va a conceder.
