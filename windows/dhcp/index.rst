@@ -1,5 +1,5 @@
-Servicidor DHCP
-===============
+Servidor DHCP
+=============
 
 .. toctree::
    
