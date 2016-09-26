@@ -8,8 +8,8 @@ Pasos a seguir:
 
 Cambia la dirección estática de la red interna del servidor Windows y ponle la siguiente configuración:
 
-* Dirección IP: 10.0.0.1
-* Mascara de red: 255.0.0.0
+	* Dirección IP: 10.0.0.1
+	* Mascara de red: 255.0.0.0
 
 
 * **Configuración del servidor DHCP**

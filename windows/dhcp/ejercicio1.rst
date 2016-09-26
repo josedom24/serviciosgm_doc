@@ -10,8 +10,8 @@ Pasos a seguir:
 
 Los servidores suelen tener su configuración de red de forma estática, en nuestro caso el servidor va a conceder las configuraciones de red por la interfaz de red virtual (modo red interna) que tiene una configuración estática:
 
-* Dirección IP: 192.168.0.1
-* Máscara de red: 255.255.255.0
+	* Dirección IP: 192.168.0.1
+	* Máscara de red: 255.255.255.0
 
 * **Configura el servidor DHCP con las siguientes características**
 
