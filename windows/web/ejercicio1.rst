@@ -14,11 +14,11 @@ Lo primero que tienes que hacer es instalar el servidor web IIS y comprobar el e
 	1. Crea dentro del directorio c:/inetpub/wwwroot un fichero llamado entrada.html en el que pongaís un mensaje de bienvenida.
 
 
-		Accede desde un navegador del servidor con Windows 2008, usando la siguiente URL:::
+		Accede desde un navegador del servidor con Windows 2008, usando la siguiente URL::
 
         		http://localhost/entrada.html
 
-		Accede desde los clientes, poniendo en un navegador la siguiente URL:::
+		Accede desde los clientes, poniendo en un navegador la siguiente URL::
 
         		http://direccion_ip_servidor/entrada.html
 
