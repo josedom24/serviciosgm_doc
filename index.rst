@@ -23,7 +23,7 @@ Servidores Windows
 ------------------
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    
    windows/index
 
