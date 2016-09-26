@@ -13,3 +13,9 @@ Normas de presentación
 7. Los códigos bash/python o contenidos de ficheros se pondrán con tipografía mono espaciada, por ejemplo, Courier, o similar. 
 8. No se abusará del uso de las capturas de pantalla, sólo se pondrán aquellas capturas que sean necesarias para justificar que se ha realizado los aspectos fundamentales del trabajo.
 
+Entregas
+--------
+
+.. toctree::
+   
+   entrega1
