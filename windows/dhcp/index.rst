@@ -7,6 +7,8 @@ Servidor DHCP
    cuestionario
    enlaces
    ejercicio1
+   ejercicio2
+   tarea
 
 
 

@@ -15,13 +15,13 @@ Los servidores suelen tener su configuración de red de forma estática, en nues
 
 * **Configura el servidor DHCP con las siguientes características**
 
-* Ámbito: iesgn
-* Rango de direcciones a repartir: 192.168.0.100 - 192.168.0.110
-* Máscara de red: 255.255.255.0
-* Duración de la concesión: 1 hora
-* Puerta de enlace: 192.168.0.1
-* Servidores DNS: 192.168.103.2, 172.22.200.61
-* Sin servidores WINS
+	* Ámbito: iesgn
+	* Rango de direcciones a repartir: 192.168.0.100 - 192.168.0.110
+	* Máscara de red: 255.255.255.0
+	* Duración de la concesión: 1 hora
+	* Puerta de enlace: 192.168.0.1
+	* Servidores DNS: 192.168.103.2, 172.22.200.61
+	* Sin servidores WINS
 
 * **Configura los clientes**
 
