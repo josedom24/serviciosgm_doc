@@ -16,11 +16,11 @@ Lo primero que tienes que hacer es instalar el servidor web IIS y comprobar el e
 
 		Accede desde un navegador del servidor con Windows 2008, usando la siguiente URL:::
 
-        	http://localhost/entrada.html
+        		http://localhost/entrada.html
 
-	Accede desde los clientes, poniendo en un navegador la siguiente URL:::
+		Accede desde los clientes, poniendo en un navegador la siguiente URL:::
 
-        	http://direccion_ip_servidor/entrada.html
+        		http://direccion_ip_servidor/entrada.html
 
 	2. A continuación vamos a publicar una página más completa en nuestro servidor, para ello bajate este [fichero .zip](files/web.zip), descomprimelo, copialo dentro de del directorio local del servidor web y accede desde el servidor y desde el cliente a la nueva pagína.
 
