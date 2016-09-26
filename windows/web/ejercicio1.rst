@@ -14,21 +14,17 @@ Lo primero que tienes que hacer es instalar el servidor web IIS y comprobar el e
 	1. Crea dentro del directorio c:/inetpub/wwwroot un fichero llamado entrada.html en el que pongaís un mensaje de bienvenida.
 
 
-	Accede desde un navegador del servidor con Windows 2008, usando la siguiente URL:::
+		Accede desde un navegador del servidor con Windows 2008, usando la siguiente URL:::
 
-        http://localhost/entrada.html
+        	http://localhost/entrada.html
 
 	Accede desde los clientes, poniendo en un navegador la siguiente URL:::
 
-        http://direccion_ip_servidor/entrada.html
+        	http://direccion_ip_servidor/entrada.html
 
 	2. A continuación vamos a publicar una página más completa en nuestro servidor, para ello bajate este [fichero .zip](files/web.zip), descomprimelo, copialo dentro de del directorio local del servidor web y accede desde el servidor y desde el cliente a la nueva pagína.
 
- 	En este cado para acceder desde el servidor, sólo hace falta poner com URL:::
- 	
- 		http://localhost
-
- 	y desde el cliente poner http://direccion_ip_servidor, ya que existe un fichero index.html.
+ 		En este cado para acceder desde el servidor, sólo hace falta poner com URL ``http://localhost``	y desde el cliente poner ``http://direccion_ip_servidor``, ya que existe un fichero index.html.
 
 
 * **Resolución local de nombres**
