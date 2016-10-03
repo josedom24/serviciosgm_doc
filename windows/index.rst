@@ -8,4 +8,5 @@ En este apartado vamos a trabajar con un servidor con un sistema operativo Windo
    tarea1
    proyecto/index
    dhcp/index
+   web/index
    
