@@ -1,9 +1,9 @@
 Tarea: Acceso a un sitio web desde internet
 ===========================================
 
-1. Siguiendo algún manual de dyndns o no-ip, por ejemplo: [dyndns](http://www.adslzone.net/tutorial-12.12.html), crea un nombre de dominio (por ejemplo *tunombre.dyndns-web.com*) apuntando a la dirección IP pública de tu router.
+1. Siguiendo algún manual de dyndns o no-ip, por ejemplo: `dyndns <http://www.adslzone.net/tutorial-12.12.html>`_, crea un nombre de dominio (por ejemplo *tunombre.dyndns-web.com*) apuntando a la dirección IP pública de tu router.
 
-2. Crea en el IIS un sitio web que se llame igual con una pequeña página index.html dando la bienvenida.
+2. Crea en el IIS un sitio web que se llame igual con una pequeña página ``index.html`` dando la bienvenida.
 
 3. Accede a la configuración de tu router y redirecciona todo las peticiones al puerto 80 a la ip privada de tu servidor windows 2008.
 
