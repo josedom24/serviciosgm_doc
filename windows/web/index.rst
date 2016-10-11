@@ -7,8 +7,8 @@ Servidor WEB
    tarea1
    ejercicio1
    ejercicio2
-   #ejercicio3
-   #tarea
+   ejercicio3
+   tarea
 
 
 
