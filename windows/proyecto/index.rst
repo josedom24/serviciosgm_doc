@@ -19,3 +19,4 @@ Entregas
 .. toctree::
    
    entrega1
+   entrega2
