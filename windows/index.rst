@@ -9,4 +9,5 @@ En este apartado vamos a trabajar con un servidor con un sistema operativo Windo
    proyecto/index
    dhcp/index
    web/index
+   dns/index
    
