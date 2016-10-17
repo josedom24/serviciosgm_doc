@@ -1,4 +1,4 @@
-Servidor WEB
+Servidor DNS
 ============
 
 .. toctree::
