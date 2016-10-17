@@ -5,7 +5,7 @@ dig es una herramienta que permite hacer consultas a un servidor DNS desde la l√
 
     dig [-t tipo de registro] [@servidor DNS] Consulta DNS
 
-El tipo de registro por defecto es ADDRESS y el servidor DNS por defecto el definido en /etc/resolv.conf.
+El tipo de registro por defecto es ADDRESS y el servidor DNS por defecto el definido en ``/etc/resolv.conf``.
 
 Nota: si no funciona el comndo dig, instala el paquete dnsutils que lo incluye.
 
