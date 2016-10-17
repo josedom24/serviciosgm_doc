@@ -17,8 +17,8 @@ Nota: si no funciona el comndo dig, instala el paquete dnsutils que lo incluye.
     es.wikipedia.org
     www.ubuntu.com
 
-
 2. Preguntas a registros tipo NS: Obtén la dirección y los servidor DNS que corresponden a los siguientes dominios::
+
 	dominio raíz
 	com
 	org

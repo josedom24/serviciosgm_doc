@@ -11,8 +11,8 @@ Ejecuta el comando nslookup en tu cliente y entrega un documento donde copies y 
     es.wikipedia.org
     www.ubuntu.com
 
-
 2. Preguntas a registros tipo NS: Obtén la dirección y los servidor DNS que corresponden a los siguientes dominios::
+
 	dominio raíz
 	com
 	org
