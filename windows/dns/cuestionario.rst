@@ -19,7 +19,7 @@ Cuestionario 3
 
 7. Indica las razones de por qué es conveniente tener configurado un servidor DNS local en nuestra intranet
 
-8. Red.es es el organismo español que gestiona el dominio es. Puedes entrar en su página: www.nic.es :
+8. Red.es es el organismo español que gestiona el dominio es. Puedes entrar en su página: http://www.nic.es
 
 * Visita el apartado estadísticas y comprueba el número de dominio .es que hay en la actualidad y a qué ritmo se han ido registrando.
 * Visita el apartado "Agentes registradores->Listado Agentes", hay puedes ver las empresas y organismos que pueden registrar dominio .es y que gestionan (tienen la zona de autoridad) sobre los dominios que se han registrados con ellos)
