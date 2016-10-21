@@ -16,8 +16,8 @@ Queremos instalar un servidor DNS local en nuestra intranet que nos permita gest
 2. Vamos a crear una zona de resolución inversa: ``1.168.192.in-addr.arpa``
 3. Vamos a tener los siguientes FQHN:
 
-    * El servidor DNS (192.168.1.1) se llama ``doreamon.iesgn.com``
-    * ``novita.iesgn.com`` (192.168.1.2, pon la configuración de red estática).
+    * El servidor DNS (192.168.1.1) se llama ``doraemon.iesgn.com``
+    * ``nobita.iesgn.com`` (192.168.1.2, pon la configuración de red estática).
     * ``gigante.iesgn.com`` (192,.168.1.3, pon la configuración de red estática).
     * ``dorami.iesgn.com`` (192.168.1.202) (esto es ficticio)
     * ``nobi.iesgn.com`` (192.168.1.203) (esto es ficticio)
@@ -35,7 +35,7 @@ Queremos instalar un servidor DNS local en nuestra intranet que nos permita gest
     2. Configura los clientes para que su DNS sea el servidor Windows 2008, debes indicar en la configuración de red del cliente como DNS primario la ip del servidor.     
     3. Comprueba el funcionamiento utilizando los comandos nslookup / dig desde los clientes preguntando por los siguientes:    
 
-        * Dirección de ``doreamon.iesgn.com``, ``www.iesgn.com``, ``ftp.iesgn.com``, ``novita.iesgn.com``
+        * Dirección de ``doraemon.iesgn.com``, ``www.iesgn.com``, ``ftp.iesgn.com``, ``nobita.iesgn.com``
         * El servidor DNS que tiene configurado la zona del dominio ``iesgn.com``
         * El servidor de correo configurado para ``iesgn.com``
         * La dirección IP de ``www.josedomingo.org``    
