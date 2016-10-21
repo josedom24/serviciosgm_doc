@@ -4,9 +4,9 @@ Servidor DNS
 .. toctree::
    
    enlaces
-   #cuestionario
-   #tarea1
-   #tarea2
+   cuestionario
+   tarea1
+   tarea2
 
 
 
