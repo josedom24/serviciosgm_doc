@@ -39,6 +39,6 @@ Queremos instalar un servidor DNS local en nuestra intranet que nos permita gest
         * El servidor DNS que tiene configurado la zona del dominio ``iesgn.com``
         * El servidor de correo configurado para ``iesgn.com``
         * La dirección IP de ``www.josedomingo.org``    
-	* El nombre de la direccióm 192.168.1.203
+	* El nombre de la dirección 192.168.1.203
 
     4. Comprueba que se puede acceder a las páginas web desde los clientes.
