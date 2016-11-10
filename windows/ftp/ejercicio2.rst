@@ -1,7 +1,7 @@
 Ejercicio: Configuración de un servidor FTP con acceso autentificado
 ====================================================================
 
-..warnings::
+..warning::
 
         Antes de comenzar esta práctica debes detener el sitio FTP que configuraste en la páctica anterior y hacer uno nuevo.
 
