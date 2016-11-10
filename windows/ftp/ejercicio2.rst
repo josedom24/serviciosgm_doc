@@ -3,7 +3,7 @@ Ejercicio: Configuración de un servidor FTP con acceso autentificado
 
 ..warning::
 
-        Antes de comenzar esta práctica debes detener el sitio FTP que configuraste en la páctica anterior y hacer uno nuevo.
+    Antes de comenzar esta práctica debes detener el sitio FTP que configuraste en la páctica anterior y hacer uno nuevo.
 
 El objetivo de esta práctica es que los usuarios locales del equipo puedan tener un directorio particular en el servidor FTP.
 
