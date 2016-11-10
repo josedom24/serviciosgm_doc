@@ -1,4 +1,4 @@
-Servidor DNS
+Servidor FTP
 ============
 
 .. toctree::
