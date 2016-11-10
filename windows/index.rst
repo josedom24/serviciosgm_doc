@@ -10,4 +10,4 @@ En este apartado vamos a trabajar con un servidor con un sistema operativo Windo
    dhcp/index
    web/index
    dns/index
-   
+   ftp/index   
