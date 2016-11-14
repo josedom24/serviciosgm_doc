@@ -14,5 +14,5 @@ Para ello vamos a realizar los siguientes pasos:
 
 3. Modifica el servidor DNS para que ``web1.iesgn.com`` y ``web2.iesgn.com`` apunte a la ip del servidor.
 
-4. Entra en el ftp y sube a cada sitio la página web que podéis descargar desde la plataforma  `<web1 <http://josedom24.github.io/mod/serviciosgm/files/web1.zip>`_ y `<web2 <http://josedom24.github.io/mod/serviciosgm/files/web2.zip>`_.
+4. Entra en el ftp y sube a cada sitio la página web que podéis descargar desde la plataforma  `web1 <http://josedom24.github.io/mod/serviciosgm/files/web1.zip>`_ y `web2 <http://josedom24.github.io/mod/serviciosgm/files/web2.zip>`_.
 
