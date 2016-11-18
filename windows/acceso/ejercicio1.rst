@@ -1,5 +1,5 @@
-Ejercicio: Instalación y configuración de un servidor FTP anónimo
-=================================================================
+Ejercicio: Instalación y configuración de un servidor acceso remoto
+===================================================================
 
 Instala el servidor RDP en nuestro servidor, y realiza los siguientes ejercicios:
 
