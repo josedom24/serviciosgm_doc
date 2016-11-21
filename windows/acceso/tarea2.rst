@@ -11,12 +11,4 @@ Haz un trabajo en grupo, que consistirá en realizar una presentacion, donde com
 
 Algunos ejemplos de aplicaciones de acceso remoto:
 
-realVNC
-Weezo
-Zoho Assist
-Team Viewer
-Ammyy Admin
-rdClient
-Any Desk
-LogMe In
-Acceso remoto chrome
+
