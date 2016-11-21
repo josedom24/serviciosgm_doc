@@ -16,4 +16,6 @@ Isamel - Samuel: gogole chrome remote
 Jesús - Gabriel: real VNC
 Juan Manuel - Adrián: anydesk
 Antonio - Samuel: weezo
-José Manuel - Juan Pedro: Team Viewer
+José Manuel - Juan Pedro: zSoporte
+Juan Antonio - Victor: isoline
+
