@@ -12,3 +12,4 @@ En este apartado vamos a trabajar con un servidor con un sistema operativo Windo
    dns/index
    ftp/index   
    acceso/index
+   correo/index
