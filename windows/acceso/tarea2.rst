@@ -11,11 +11,11 @@ Haz un trabajo en grupo, que consistirá en realizar una presentacion, donde com
 
 Algunos ejemplos de aplicaciones de acceso remoto:
 
-Daniel - Gabriel: ammyy admin
-Isamel - Samuel: gogole chrome remote
-Jesús - Gabriel: real VNC
-Juan Manuel - Adrián: anydesk
-Antonio - Samuel: weezo
-José Manuel - Juan Pedro: zSoporte
-Juan Antonio - Victor: islonline
-
+* Daniel - Gabriel: ammyy admin
+* Isamel - Samuel: gogole chrome remote
+* Jesús - Gabriel: real VNC
+* Juan Manuel - Adrián: anydesk
+* Antonio - Samuel: weezo
+* José Manuel - Juan Pedro: zSoporte
+* Juan Antonio - Victor: islonline
+* Bryan - David: Team viewer
