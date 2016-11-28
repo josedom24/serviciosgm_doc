@@ -28,4 +28,4 @@ Servidores Windows
    windows/index
 
 
-`Calificaciones del módulo <https://docs.google.com/spreadsheets/d/1NyEFV7pzVpdlfHH2BTOygvbb1sJzGuzglL2zLW0pWLc/pubhtml#>`_   
+`Calificaciones del módulo <http://notas.gonzalonazareno.org>`_   
