@@ -19,13 +19,22 @@ El índice de contenidos que vamos a estudiar será:
    
    introduccion/index
    
-Servidores Windows
-------------------
+Servidor Windows
+----------------
 
 .. toctree::
    :maxdepth: 2
    
    windows/index
+
+Servidor Linux
+--------------
+
+.. toctree::
+   :maxdepth: 2
+
+   linux/index
+   
 
 
 `Calificaciones del módulo <http://notas.gonzalonazareno.org>`_   
