@@ -1,8 +1,8 @@
 Tarea 1: Instalación de paquetes
 ================================
 
-Instalar paquetes
------------------
+**Instalar paquetes**
+
 
 Vamos a instalar un servicio de ejemplo, utilizando la herramienta ``apt-get``. El servicio que vamos a instalar es ntp, que nos permite la sincronización del reloj del sistema.
 
@@ -32,30 +32,30 @@ Veamos algunos conceptos antes de contestar:
 * ¿Qué son los paquetes extras? Son las dependencias, los paquetes necesarios para que funcione el paquete que queremos usar.
 * ¿Qué son los paquetes sugeridos? Son paquetes relacionados con el que queremos instalar y que ofrecen alguna funcionalidad extra.
 
-La herramienta apt-get descarga de los repositorios los paquetes necesarios y utilizando dpkg los instala y configura. Una vez concluida la instalación el servicio ntp estará funcionando.
+La herramienta ``apt-get`` descarga de los repositorios los paquetes necesarios y utilizando ``dpkg`` los instala y configura. Una vez concluida la instalación el servicio ntp estará funcionando.
 
 .. warning::
     
-    Antes de realizar el siguiente ejercicio, desinstala el servidor ssh. El paquete ssh es un metapaquete, que en realidad instala dos paquete: el servidor ssh y el cliente: openssh-server, y openssh-client. Por lo tanto debes eliminar estos dos paquetes.
+    Antes de realizar el siguiente ejercicio, desinstala el servidor ssh. El paquete ``ssh`` es un metapaquete, que en realidad instala dos paquete: el servidor ssh y el cliente: ``openssh-server``, y ``openssh-client``. Por lo tanto debes eliminar estos dos paquetes.
 
 .. note::
 
-*Ejercicios*
+	*Ejercicios*
 
-1. Instala ahora otro servidor que vamos a utilizar durante el curso: el SSH, que nos permite la conexión remota de forma segura a nuestro ordenador. Puedes instalar el metapaquete ssh, o los dos paquetes que hemos indicado anteriormente.
+	1. Instala ahora otro servidor que vamos a utilizar durante el curso: el SSH, que nos permite la conexión remota de forma segura a nuestro ordenador. Puedes instalar el metapaquete ssh, o los dos paquetes que hemos indicado anteriormente.
 
-Desinstalar paquetes
---------------------
+**Desinstalar paquetes**
 
-La opción de apt-get que debemos usar para desisntalar nuestro paquete es la siguiente:
+
+La opción de apt-get que debemos usar para desisntalar nuestro paquete es la siguiente::
 
         apt-get remove ntp
 
-Esta opción no elimina los ficheros de configuración del servicio, para hacerlo tenemos que usar la siguiente opción:
+Esta opción no elimina los ficheros de configuración del servicio, para hacerlo tenemos que usar la siguiente opción::
 
         apt-get remove --purge ntp
 
-..warning::
+.. warning::
 
     **Atención!!!: Cuando desinstalamos un paquete, ¿se desinstalan las dependencias?**
 
@@ -67,22 +67,20 @@ Esta opción no elimina los ficheros de configuración del servicio, para hacerl
     3. Vuelve instalarlo, y desinstala ahora utilizando la opción purge. Comprueba que todos los ficheros relacionados se han borrado. (Para que funciones tienes que trabajar con los paquetes, no con el metapaquete ssh).
     4. Vuelve a instalar el servidor SSH, ya que lo vamos a utilizar durante el curso. ¿Por qué a partir de la segunda instalación el proceso es más rápido?
 
-Actualizando los paquetes de nuestro sistema
---------------------------------------------
+**Actualizando los paquetes de nuestro sistema**
 
-Para actualizar la lista de paquetes que tenemos disponibles para la instalación:
+Para actualizar la lista de paquetes que tenemos disponibles para la instalación::
 
         apt-get update
 
-Para actualizar la lista de paquetes disponibles con la información del fichero /etc/apt/sources.list
+Para actualizar la lista de paquetes disponibles con la información del fichero ``/etc/apt/sources.list``::
 
         apt-get upgrade
 
-Con esta instrucción actualizamos la instalación de los paquetes a su última versión sin tener en cuenta las dependencias.
+Con esta instrucción actualizamos la instalación de los paquetes a su última versión sin tener en cuenta las dependencias. Con esta instrucción actualizamos la instalación de los paquetes a su última versión pero teniendo en cuenta las dependencias::
 
         apt-get dist-upgrade 
 
-Con esta instrucción actualizamos la instalación de los paquetes a su última versión pero teniendo en cuenta las dependencias.
 
 Algunas consideraciones:
 
@@ -96,14 +94,14 @@ Cuando usamos APT para instalar paquetes hace dos tareas por separado: en un pri
 
     5. Escribe la instrucción qie permite actualizar la lista de paquetes disponibles para instalar.
 
-*Descarga de los paquetes para su instalación*
+**Descarga de los paquetes para su instalación**
 
-Todos los paquetes descargados por APT se almacenan en un directorio, para posteriormente poder instalarlo con dpkg. El directorio donde podemos encontrar los paquetes bajados es:
+Todos los paquetes descargados por APT se almacenan en un directorio, para posteriormente poder instalarlo con dpkg. El directorio donde podemos encontrar los paquetes bajados es::
 
         /var/cache/apt/archives
 
 
-Para borrar esta cache de paquetes podemos usar la opción siguiente de APT:
+Para borrar esta cache de paquetes podemos usar la opción siguiente de APT::
 
         apt-get clean
 
@@ -116,25 +114,24 @@ Para borrar esta cache de paquetes podemos usar la opción siguiente de APT:
     8. Borra la cache de paquetes y comprueba que se han borrado. Te en cuenta que a continuación deberás instalar algún paquete para tener paquetes en la cache y seguir haciendo las tareas.
 
 
-*Buscando paquetes en los repositorios: apt-cache*
+**Buscando paquetes en los repositorios: apt-cache**
 
-Con la siguiente instrucciones podemos buscar paquetes en los repositorios:
+Con la siguiente instrucciones podemos buscar paquetes en los repositorios::
 
         apt-cache search <busqueda>
 
-Busca todos los paquetes que tengan relaciones con las palabras que hayas indicado en la busqueda.
+Busca todos los paquetes que tengan relaciones con las palabras que hayas indicado en la busqueda::
 
         apt-cache show <paquete>
 
-Te da información del paquete indicado, si tienes instalado el paquete te da información del instalado y de la nueva versión.
+Te da información del paquete indicado, si tienes instalado el paquete te da información del instalado y de la nueva versión. Te da información más detallada del paquete indicado::
 
         apt-cache showpkg <paquete> 
 
-Te da información más detallada del paquete indicado.
+Te da la lista de dependencias del paquete indicado::
 
         apt-cache depends <paquete> 
 
-Te da la lista de dependencias del paquete indicado.
 
 .. note::
 
@@ -145,8 +142,8 @@ Te da la lista de dependencias del paquete indicado.
     11. Lista los paquetes de los que depende el paquete phpmyadmin
 
 
-Aptitude
---------
+**Aptitude**
+
 
 Siguiendo algún manual de Aptitude realiza las siguientes tareas:
 
