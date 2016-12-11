@@ -34,16 +34,18 @@ Veamos algunos conceptos antes de contestar:
 
 La herramienta apt-get descarga de los repositorios los paquetes necesarios y utilizando dpkg los instala y configura. Una vez concluida la instalación el servicio ntp estará funcionando.
 
-<div class='nota' markdown='1'>
-Antes de realizar el siguiente ejercicio, desinstala el servidor ssh.
-</div>
+.. warning::
+    
+    Antes de realizar el siguiente ejercicio, desinstala el servidor ssh. El paquete ssh es un metapaquete, que en realidad instala dos paquete: el servidor ssh y el cliente: openssh-server, y openssh-client. Por lo tanto debes eliminar estos dos paquetes.
 
-<div class='ejercicios' markdown='1'>
-##### **Ejercicios**
-1) Instala ahora otro servidor que vamos a utilizar durante el curso: el SSH, que nos permite la conexión remota de forma segura a nuestro ordenador.
-</div>
+.. note::
 
-#### Desinstalar paquetes:
+*Ejercicios*
+
+1. Instala ahora otro servidor que vamos a utilizar durante el curso: el SSH, que nos permite la conexión remota de forma segura a nuestro ordenador. Puedes instalar el metapaquete ssh, o los dos paquetes que hemos indicado anteriormente.
+
+Desinstalar paquetes
+--------------------
 
 La opción de apt-get que debemos usar para desisntalar nuestro paquete es la siguiente:
 
@@ -53,18 +55,22 @@ Esta opción no elimina los ficheros de configuración del servicio, para hacerl
 
         apt-get remove --purge ntp
 
-**Atención!!!: Cuando desinstalamos un paquete, ¿se desinstalan las dependencias?**
+..warning::
 
-<div class='ejercicios' markdown='1'>
-##### **Ejercicios**
-2) Desinstala el servidor SSH con *apt-get remove*. Comprueba que no se han borrado los ficheros de configuración. (Los ficheros de configuración están en /etc/ssh)
+    **Atención!!!: Cuando desinstalamos un paquete, ¿se desinstalan las dependencias?**
 
-3) Vuelve instalarlo, y desinstala ahora utilizando la opción purge. Comprueba que todos los ficheros relacionados se han borrado.
+.. note::
 
-4) Vuelve a instalar el servidor SSH, ya que lo vamos a utilizar durante el curso. ¿Por qué a partir de la segunda instalación el proceso es más rápido?
-</div>
+    *Ejercicios*
 
-#### Actualizando los paquetes de nuestro sistema
+    2. Desinstala el servidor SSH con *apt-get remove*. Comprueba que no se han borrado los ficheros de configuración. (Los ficheros de configuración están en /etc/ssh)
+    3. Vuelve instalarlo, y desinstala ahora utilizando la opción purge. Comprueba que todos los ficheros relacionados se han borrado. (Para que funciones tienes que trabajar con los paquetes, no con el metapaquete ssh).
+    4. Vuelve a instalar el servidor SSH, ya que lo vamos a utilizar durante el curso. ¿Por qué a partir de la segunda instalación el proceso es más rápido?
+
+Actualizando los paquetes de nuestro sistema
+--------------------------------------------
+
+Para actualizar la lista de paquetes que tenemos disponibles para la instalación:
 
         apt-get update
 
@@ -80,16 +86,17 @@ Con esta instrucción actualizamos la instalación de los paquetes a su última 
 
 Algunas consideraciones:
 
-1. Si estamos trabajando en la rama estable (wheezy) las dependencias de los paquetes no cambian por lo que es lo mismo usar un upgrade que un dist-upgrade.
+1. Si estamos trabajando en la rama estable (jessie) las dependencias de los paquetes no cambian por lo que es lo mismo usar un upgrade que un dist-upgrade.
 2. En la versión testing las dependencias pueden ir cambiando por lo que si utilizamos upgrade los paquetes cuyas dependencias han cambiado se retienen y no se actualizan, por lo que es conveniente usar el dist-upgrade para ir resolviendo las dependencias.
 Cuando usamos APT para instalar paquetes hace dos tareas por separado: en un primer paso descarga de los repositorios los paquetes que va a instalar, para a continuación usar la instrucción dpkg para desempaquetar y configurar cada paquete. Veamos algunas cuestiones relacionadas con estas dos tares.
 
-<div class='ejercicios' markdown='1'>
-##### **Ejercicios**
-5) Escribe la instrucción qie permite actualizar la lista de paquetes disponibles para instalar.
-</div>
+.. note::
 
-#### Descarga de los paquetes para su instalación
+    *Ejercicios*
+
+    5. Escribe la instrucción qie permite actualizar la lista de paquetes disponibles para instalar.
+
+*Descarga de los paquetes para su instalación*
 
 Todos los paquetes descargados por APT se almacenan en un directorio, para posteriormente poder instalarlo con dpkg. El directorio donde podemos encontrar los paquetes bajados es:
 
@@ -100,17 +107,16 @@ Para borrar esta cache de paquetes podemos usar la opción siguiente de APT:
 
         apt-get clean
 
-<div class='ejercicios' markdown='1'>
-##### **Ejercicios**
-6) Comprueba los paquetes deb que tienes en tu cache de paquetes.
+.. note::
 
-7) ¿Qué ocurre si desinstala un paquete y lo vuelves a instalar, si el paquete está en la cache?
+    *Ejercicios*
 
-8) Borra la cache de paquetes y comprueba que se han borrado. Te en cuenta que a continuación deberás instalar algún paquete para tener paquetes en la cache y seguir haciendo las tareas.
+    6. Comprueba los paquetes deb que tienes en tu cache de paquetes.
+    7. ¿Qué ocurre si desinstala un paquete y lo vuelves a instalar, si el paquete está en la cache?
+    8. Borra la cache de paquetes y comprueba que se han borrado. Te en cuenta que a continuación deberás instalar algún paquete para tener paquetes en la cache y seguir haciendo las tareas.
 
-</div>
 
-#### Buscando paquetes en los repositorios: apt-cache
+*Buscando paquetes en los repositorios: apt-cache*
 
 Con la siguiente instrucciones podemos buscar paquetes en los repositorios:
 
@@ -130,31 +136,26 @@ Te da información más detallada del paquete indicado.
 
 Te da la lista de dependencias del paquete indicado.
 
-<div class='ejercicios' markdown='1'>
-##### **Ejercicios**
+.. note::
 
-9) Busca todos lo paquetes que tengan la palabra "apache2"
+    *Ejercicios*
 
-10) Obtén información del paquete ssh que hemos instalado
+    9. Busca todos lo paquetes que tengan la palabra "apache2"
+    10. Obtén información del paquete ssh que hemos instalado
+    11. Lista los paquetes de los que depende el paquete phpmyadmin
 
-11) Lista los paquetes de los que depende el paquete phpmyadmin
 
-</div>
-
-#### Aptitude
+Aptitude
+--------
 
 Siguiendo algún manual de Aptitude realiza las siguientes tareas:
 
-<div class='ejercicios' markdown='1'>
-##### **Ejercicios**
+.. note::
+    
+    *Ejercicios*
 
-12) Busca paquetes que tengan la palabra "ldap"
+    12. Busca paquetes que tengan la palabra "ldap"
+    13. Desinstala el paquete "ssh" que habíamos instalado anteriormente.
+    14. Instala de nuevo el paquete "ssh".
+    15. ¿Cuál es la diferencia más importante entre usar aptitude y apt?
 
-13) Desinstala el paquete "ssh" que habíamos instalado anteriormente.
-
-14) Instala de nuevo el paquete "ssh".
-
-15) ¿Cuál es la diferencia más importante entre usar aptitude y apt?
-
-</div>
-[Volver](index)
