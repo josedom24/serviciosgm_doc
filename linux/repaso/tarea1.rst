@@ -4,9 +4,9 @@ Tarea 1: Instalación de paquetes
 Instalar paquetes
 -----------------
 
-Vamos a instalar un servicio de ejemplo, utilizando la herramienta apt-get. El servicio que vamos a instalar es ntp, que nos permite la sincronización del reloj del sistema.
+Vamos a instalar un servicio de ejemplo, utilizando la herramienta ``apt-get``. El servicio que vamos a instalar es ntp, que nos permite la sincronización del reloj del sistema.
 
-Para ello vamos a utilizar la instrucción:
+Para ello vamos a utilizar la instrucción::
 
         apt-get install ntp
 
