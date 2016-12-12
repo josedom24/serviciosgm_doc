@@ -90,7 +90,7 @@ De modo esquemático podemos ver:
     * Renombrarlo con algo que no empiece con S o K y dejarlo por si queremos luego activarlo.
     * Lo que no hay que hacer nunca es eliminar el archivo original en ``/etc/init.d/``
 
-..note::
+.. note::
 
     Ejercicios  
 
