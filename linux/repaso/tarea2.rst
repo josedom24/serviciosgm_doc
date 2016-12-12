@@ -191,7 +191,7 @@ Podemos desactivarlo en el arranque de la siguiente manera::
 
 Podemos observar que la orden ``systemctl enable smbd``, lo que hará será crear el enlace simbólico en ``/etc/systemd/system/``, que apunte al servicio ``smbd.service`` que reside en ``/usr/lib/systemd/system/``, de forma que Systemd active el servicio Samba en el próximo arranque del sistema.
 
-*Targets*
+**Targets**
 
 systemd utiliza targets («objetivos») que sirven a un propósito similar a los runlevels («niveles de ejecución»), pero que tienen un comportamiento un poco diferente. Cada target se nomina, en lugar de numerarse, y está destinado a servir a un propósito específico con la posibilidad de realizar más de una acción al mismo tiempo. Algunos targets son activados heredando todos los servicios de otro target e implementando servicios adicionales. 
 
