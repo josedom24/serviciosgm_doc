@@ -145,3 +145,49 @@ Del mismo modo puedes ver el nombre del proceso mirando la lista de procesos con
     18. Vuelve a ejecutar el gestor de arranque gráfico gdm.
     19. Del mismo modo puedes matar el demonio del servicio ssh, y volver a reiniciarlo posteriormente.
 
+**Systemd**
+
+Debian, tomó la importante decisión de adoptar Systemd como su próximo sistema de inicio GNU/Linux. Systemd ha sido diseñado para ofrecer un arranque más rápido, más seguro y sobre todo más flexible que SysV. Permite el arranque en paralelo de servicios y su inicio en función de la activación externa, en vez de un arranque lineal y en función de modos de ejecución fijos propio de SysV que han quedado obsoletos.
+
+*¿Dónde están los archivos de systemd?*
+
+En ``/etc/systemd/system/``  y sus subdirectorios, podemos encontrar los archivos de los servicios activos (*nombre.de.servicio.service*), que son enlaces simbólicos a los archivos de servicios alojados en ``/usr/lib/systemd/system/``. Así, en ``/etc/systemd/system/`` y sus subdirectorios podemos encontrar, entre otros, por ejemplo::
+
+    sshd.service -> /lib/systemd/system/ssh.service
+
+*¿Cómo se controlan los servicios en Systemd?*
+
+Para saber qué servicios están activos (lista todos los servicios e informa de si están cargados, activos, montados, en espera, etc)::
+
+    systemctl list-units --type=service
+
+Arrancar un servicio (por ejemplo para arrancar el servidor web)::
+
+    systemctl start apache2    
+
+Detener un servicio (detiene el servicio de impresión CUPS)::
+
+    systemctl stop cups    
+
+Apagar y reiniciar un servicio::
+
+    systemctl restart cups
+
+Apagar y reiniciar un servicio de forma "suave": (vuelve a cargar su archivo de configuración antes de arrancarlo)::
+
+    systemctl reload cups    
+
+Ver el estado de un servicio::
+
+    systemctl status cups
+
+Para hacer que un servicio se inicie al arrancar el ordenador (hará que Samba se incicie al arranque del ordenador)::
+
+    systemctl enable smbd     
+
+Podemos desactivarlo en el arranque de la siguiente manera::
+
+    systemctl disable smbd   
+
+Podemos observar que la orden ``systemctl enable smbd``, lo que hará será crear el enlace simbólico en ``/etc/systemd/system/``, que apunte al servicio ``smbd.service`` que reside en ``/usr/lib/systemd/system/``, de forma que Systemd active el servicio Samba en el próximo arranque del sistema.
+
