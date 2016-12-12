@@ -11,7 +11,7 @@ Para ello vamos a utilizar la instrucción::
         apt-get install ntp
 
         Leyendo lista de paquetes... Hecho
-        Creando árbol de dependencias       
+        Creando árbol de dependencias
         Leyendo la información de estado... Hecho
         Los paquetes indicados a continuación se instalaron de forma automática y ya no son necesarios.
           libmozjs24d xulrunner-24.0
@@ -25,7 +25,7 @@ Para ello vamos a utilizar la instrucción::
         0 actualizados, 2 se instalarán, 0 para eliminar y 13 no actualizados.
         Necesito descargar 635 kB de archivos.
         Se utilizarán 1.460 kB de espacio de disco adicional después de esta operación.
-        ¿Desea continuar [S/n]? 
+        ¿Desea continuar [S/n]?
 
 Veamos algunos conceptos antes de contestar:
 
@@ -35,7 +35,7 @@ Veamos algunos conceptos antes de contestar:
 La herramienta ``apt-get`` descarga de los repositorios los paquetes necesarios y utilizando ``dpkg`` los instala y configura. Una vez concluida la instalación el servicio ntp estará funcionando.
 
 .. warning::
-    
+
     Antes de realizar el siguiente ejercicio, desinstala el servidor ssh. El paquete ``ssh`` es un metapaquete, que en realidad instala dos paquete: el servidor ssh y el cliente: ``openssh-server``, y ``openssh-client``. Por lo tanto debes eliminar estos dos paquetes.
 
 .. note::
@@ -79,7 +79,7 @@ Para actualizar la lista de paquetes disponibles con la información del fichero
 
 Con esta instrucción actualizamos la instalación de los paquetes a su última versión sin tener en cuenta las dependencias. Con esta instrucción actualizamos la instalación de los paquetes a su última versión pero teniendo en cuenta las dependencias::
 
-        apt-get dist-upgrade 
+        apt-get dist-upgrade
 
 
 Algunas consideraciones:
@@ -126,11 +126,11 @@ Busca todos los paquetes que tengan relaciones con las palabras que hayas indica
 
 Te da información del paquete indicado, si tienes instalado el paquete te da información del instalado y de la nueva versión. Te da información más detallada del paquete indicado::
 
-        apt-cache showpkg <paquete> 
+        apt-cache showpkg <paquete>
 
 Te da la lista de dependencias del paquete indicado::
 
-        apt-cache depends <paquete> 
+        apt-cache depends <paquete>
 
 
 .. note::
@@ -144,15 +144,13 @@ Te da la lista de dependencias del paquete indicado::
 
 **Aptitude**
 
-
 Siguiendo algún manual de Aptitude realiza las siguientes tareas:
 
 .. note::
-    
+
     *Ejercicios*
 
     12. Busca paquetes que tengan la palabra "ldap"
     13. Desinstala el paquete "ssh" que habíamos instalado anteriormente.
     14. Instala de nuevo el paquete "ssh".
     15. ¿Cuál es la diferencia más importante entre usar aptitude y apt?
-

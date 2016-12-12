@@ -191,3 +191,49 @@ Podemos desactivarlo en el arranque de la siguiente manera::
 
 Podemos observar que la orden ``systemctl enable smbd``, lo que hará será crear el enlace simbólico en ``/etc/systemd/system/``, que apunte al servicio ``smbd.service`` que reside en ``/usr/lib/systemd/system/``, de forma que Systemd active el servicio Samba en el próximo arranque del sistema.
 
+*Targets*
+
+systemd utiliza targets («objetivos») que sirven a un propósito similar a los runlevels («niveles de ejecución»), pero que tienen un comportamiento un poco diferente. Cada target se nomina, en lugar de numerarse, y está destinado a servir a un propósito específico con la posibilidad de realizar más de una acción al mismo tiempo. Algunos targets son activados heredando todos los servicios de otro target e implementando servicios adicionales. 
+
+La correspondencia entre runlevels y targets es la siguiente:
+
+================    =================   =====
+Runlevel de SysV    Target de systemd   Notas
+================    =================   =====
+0   runlevel0.target, poweroff.target   Detiene el sistema.
+1, s, single    runlevel1.target, rescue.target     Modalidad de usuario único.
+2, 4    runlevel2.target, runlevel4.target, multi-user.target   Definidos por el usuario. Preconfigurados a 3.
+3   runlevel3.target, multi-user.target     Multiusuario, no gráfica. Los usuarios, por lo general, pueden acceder a través de múltiples consolas o a través de la red.
+5   runlevel5.target, graphical.target  Multiusuario, gráfica. Por lo general, tiene todos los servicios del nivel de ejecución 3, además de un inicio de sesión gráfica.
+6   runlevel6.target, reboot.target     Reinicia el sistema.
+emergency   emergency.target    Consola de emergencia. 
+================    =================   =====
+
+Para saber los targets que están cargados::
+
+    systemctl list-units --type=target
+
+Para cambiar de un target a otro, por ejemplo para reiniciar el sistema podemos ejecutar::
+
+    systemctl isolate reboot.target
+
+**Logs de procesos**
+
+Los logs de los procesos se guardan en el directorio ``/var/log/``, por ejemplo el fichero syslog es el principal, y en él podemos encontrar mensajes de distintos procesos (por ejemplo el servidor dhcp). Algunos servicios tienen su propio fichero de log, por ejemplo ``/var/log/apache2/error.log``.
+
+Normalmente para ver la últimas líneas del fichero de log, utilizamos el siguiente comando::
+
+    tailf /var/log/syslog
+
+Con systemd tenemos otra manera de ver los logs, si al iniciar un servicio nos da un error, podemos ver los mensajes del log con la instrucción::
+
+    journalctl -xn
+
+.. note::
+
+    Ejercicios  
+
+    20. Para el servicio ``ssh``, con systemd.  
+    21. Modifica el fichero de configuración del servidor ``/etc/ssh/sshd_config``, borra alguna letra para que se produzca un error al inciar el servicio. Inicia el servidor con systemd y comprueba que hay un error.    
+    22. Ejecuta la instrucción adecuada para ver el error que se ha producido.  
+    23. Arregla el fichero de configuración y vuelve a iniciar el servicio.
