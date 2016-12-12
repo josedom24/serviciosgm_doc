@@ -197,17 +197,17 @@ systemd utiliza targets («objetivos») que sirven a un propósito similar a los
 
 La correspondencia entre runlevels y targets es la siguiente:
 
-================    =================                                       =====
+================    =====================================================   ===================================================================================================================================
 Runlevel de SysV    Target de systemd                                       Notas
-================    =================                                       =====
+================    =====================================================   ===================================================================================================================================
 0                   runlevel0.target, poweroff.target                       Detiene el sistema.
 1, s, single        runlevel1.target, rescue.target                         Modalidad de usuario único.
 2, 4                runlevel2.target, runlevel4.target, multi-user.target   Definidos por el usuario. Preconfigurados a 3.
 3                   runlevel3.target, multi-user.target                     Multiusuario, no gráfica. Los usuarios, por lo general, pueden acceder a través de múltiples consolas o a través de la red.
 5                   runlevel5.target, graphical.target                      Multiusuario, gráfica. Por lo general, tiene todos los servicios del nivel de ejecución 3, además de un inicio de sesión gráfica.
 6                   runlevel6.target, reboot.target                         Reinicia el sistema.
-emergency   emergency.target    Consola de emergencia. 
-================    =================                                       =====
+emergency           emergency.target    Consola de emergencia. 
+================    =====================================================   ===================================================================================================================================
 
 Para saber los targets que están cargados::
 
