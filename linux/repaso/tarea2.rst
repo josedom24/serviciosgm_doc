@@ -114,7 +114,7 @@ También se puede utilizar el comando ``service``, de esta forma para reiniciar 
     /etc/init.d/ssh restart
     service ssh restart
 
-..note::
+.. note::
 
     Ejercicios  
 
@@ -136,7 +136,7 @@ Podemos también utilizar la siguiente instrucción::
 
 Del mismo modo puedes ver el nombre del proceso mirando la lista de procesos con ``ps``.
 
-..note::
+.. note::
 
     Ejercicios
 
