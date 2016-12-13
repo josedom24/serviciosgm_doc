@@ -97,6 +97,48 @@ Con estas instrucciones puedes desconectar (ifdown) y conectar (ifup) la interfa
     ifdown eth0
 
 
+**Configurando los nombres de la máquina y la resolución DNS**
+
+``/etc/nsswitch.conf``
+
+En este fichero se especifican los métodos de resolución de nombres del equipo, por ejemplo existe una línea::
+
+    hosts: files dns
+
+que nos dice dónde y en qué orden va a buscar la relación entre nombres de equipo y direcciones IP, en este caso en ficheros y servidores DNS.
+
+``/etc/hostname``
+
+En este fichero se encuentra el nombre de la máquina.
+
+Para obtener el nombre de la máquina puedes utilizar la instrucción ``hostname``.
+
+``/etc/hosts``
+
+En este fichero se encuentra las resoluciones estáticas de DNS, en este fichero indicamos la relación entre direcciones IP y nombres.
+
+Si usamos la siguiente instrucción::
+
+    hostname -f
+    hostname: Unknown host
+
+El mensaje de Unknown host, significa que nuestro sistema no tiene un FQDN (Fully Qualified Domain Name es un nombre que incluye el nombre de la computadora y el nombre de dominio asociado a ese equipo). Lo resolvemos agregando nuestro domino al nombre del host, en el formato IP *nombre_host.dominio.com*, de esta manera de ejemplo::
+
+    nano /etc/hosts
+
+    192.168.1.1 mi_maquina.mi_dominio.com mi_maquina
+
+``/etc/resolv.conf``
+
+En este fichero se encuentra las direcciones de los servidores DNS, que nos van a permitir la traducción de nombres a direcciones IP.
+
+..note::
+
+    Ejercicios
+
+    1. Cambia el nombre de tu máquina.
+    2. Modifica el fichero hosts, e introduce tu dirección IP con el nombre de máquina y el FQDN.
+    3. Edita el fichero /etc/resolv.conf, comprueba los servidores DNS que están configurados y cámbialos por los siguientes (194.224.52.36 y 194.224.52.37)
 
 
 
