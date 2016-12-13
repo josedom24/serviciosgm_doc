@@ -82,7 +82,7 @@ Es el script ``/etc/init.d/rc`` el que procesa todos los archivos K y S de los d
 
 De modo esquemático podemos ver:
 
-.. image:: img/niveles.png
+.. image:: https://github.com/josedom24/serviciosgm_doc/raw/master/linux/repaso/img/niveles.png
 
 *4) ¿Qué hacer para eliminar un servicio en un determinado nivel?*
 

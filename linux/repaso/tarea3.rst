@@ -132,7 +132,7 @@ El mensaje de Unknown host, significa que nuestro sistema no tiene un FQDN (Full
 
 En este fichero se encuentra las direcciones de los servidores DNS, que nos van a permitir la traducción de nombres a direcciones IP.
 
-..note::
+.. note::
 
     Ejercicios
 
