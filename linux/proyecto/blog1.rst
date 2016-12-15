@@ -1,5 +1,5 @@
-Tarea 4:Creación de un blog de trabajo
-======================================
+Tarea 4: Creación de un blog de trabajo
+=======================================
 
 **Definición de blog**
 
