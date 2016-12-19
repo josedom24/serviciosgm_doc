@@ -6,5 +6,5 @@ Tareas
 
 .. toctree::
 
-   blog1
+   blog
    

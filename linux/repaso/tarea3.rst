@@ -96,7 +96,7 @@ O simplemente::
 
   Ejercicios
 
-  5. Utilizando el comando ip, visualiza las routas y determina la puesta de enlace.
+  5. Utilizando el comando ip, visualiza las rutas y determina la puerta de enlace.
 
 **Configurando los nombres de la máquina y la resolución DNS**
 
