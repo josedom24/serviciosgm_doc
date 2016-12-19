@@ -3,13 +3,13 @@ Blog 1: Instalación y configuración inicial
 
 Un centro educativo ha comprado un servidor, en el que se va instalar una distribución Debian, y que se va a instalar siguiendo este esquema de red:
 
-Esquema de red
+.. image:: https://github.com/josedom24/serviciosgm_doc/raw/master/linux/proyecto/img/esquema.png
+
 
 **Instalación de las máquinas**
 
 Vamos a utilizar VirualBox para simular las máquinas que necesitamos en nuestro esquema de trabajo, en nuestro proyecto vamos a necesitar 3 máquinas virtuales:
 
-.. image:: https://github.com/josedom24/serviciosgm_doc/raw/master/linux/proyecto/img/esquema.png
 
     * Un servidor, donde instalaremos Debian 8.0
     * Un cliente, donde se instalará Windows 7
