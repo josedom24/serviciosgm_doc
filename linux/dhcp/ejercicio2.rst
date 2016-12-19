@@ -15,8 +15,8 @@ En una sección ``host`` debemos poner el nombre que identifica al host y los si
 
 	**Ejercicios**
 
-    1. Crea en el servidor dhcp una sección HOST para conceder a un cliente una dirección IP determinada (por ejemplo la 192.168.0.105)
-    2. Obtén una nueva dirección IP en el cliente y comprueba que es la que has asignado por medio de la sección host.
+    	1. Crea en el servidor dhcp una sección HOST para conceder a un cliente una dirección IP determinada (por ejemplo la 192.168.0.105)
+    	2. Obtén una nueva dirección IP en el cliente y comprueba que es la que has asignado por medio de la sección host.
 
 	**Realiza las siguientes comprobaciones**
 
