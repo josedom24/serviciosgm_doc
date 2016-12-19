@@ -6,7 +6,7 @@ En este apartado vamos a trabajar con un servidor con un sistema operativo GNU/L
 .. toctree::
 
    repaso/index
-   #proyecto/index
+   proyecto/index
    #hcp/index
    #web/index
    #dns/index
