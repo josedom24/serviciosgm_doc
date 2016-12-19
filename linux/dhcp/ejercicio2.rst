@@ -1,37 +1,27 @@
-Ejercicio: Configuración de un servidor DHCP en Windows Server 2008 (2)
-=======================================================================
+Ejercicio: Instalación y configuración de una reserva en un servidor dhcp 
+=========================================================================
 
-En nuestra red interna es necesario, por diversas razones, cambiar el direccionamiento de red. Necesitamos implantar un red 10.0.0.0/8:
-Pasos a seguir:
+**Creando reservas**
 
-* **Configuración de la red**
+Veamos la sección host, en ella configuramos un host para reservar una dirección IP para él.
 
-Cambia la dirección estática de la red interna del servidor Windows y ponle la siguiente configuración:
+En una sección ``host`` debemos poner el nombre que identifica al host y los siguientes parámetros:
 
-	* Dirección IP: 10.0.0.1
-	* Mascara de red: 255.0.0.0
-
-
-* **Configuración del servidor DHCP**
-
-Modifica la configuración del servidor DHCP con los siguientes datos:
-
-	* Ámbito: iesgn
-	* Rango de direcciones a repartir: 10.0.0.10 - 10.0.0.20
-	* Máscara de red: 255.0.0.0
-	* Duración de la concesión: 1 hora
-	* Puerta de enlace: 10.0.0.1
-	* Servidores DNS: 192.168.103.2, 172.22.200.61
-	* Sin servidores WINS
-
-* **Configura los clientes**
-
-Renueva la concesión en los clientes y si es necesario, modifica la configuración del enrutador en el servidor Windows para darle internet a los clientes.
+    * ``hardware ethernet``: Es la dirección MAC de la tarjeta de red del host.
+    * ``fixed-address``: La dirección IP que le vamos a asignar.
+    * Podemos usar también las opciones ya explicadas en la sección principal.
 
 .. warning::
 
 	**Ejercicios**
 
-	1. Comprueba en las propiedades del servidor DHCP que has realizado la configuración adecuada.
-	2. Comprueba las concesiones de direcciones que has realizado.
-	3. Comprueba en cada uno de los clientes la configuración que han tomado.
+    1. Crea en el servidor dhcp una sección HOST para conceder a un cliente una dirección IP determinada (por ejemplo la 192.168.0.105)
+    2. Obtén una nueva dirección IP en el cliente y comprueba que es la que has asignado por medio de la sección host.
+
+	**Realiza las siguientes comprobaciones**
+
+	Vamos a comprobar que ocurre con la configuración de los clientes en determinadas circunstacia, para ello vamos a poner un tiempo de conseción muy bajo. 
+
+		1. Los clientes toman una configuración, y a continuación apagamos el servidor dhcp. ¿qué ocurre con el cliente windows? ¿Y con el cliente linux? 
+		2. Los clientes toman una configuración, y a continuación cambiamos la configuración del servidor dhcp (por ejemplo el rango). ¿qué ocurre con el cliente windows? ¿Y con el cliente linux?
+
