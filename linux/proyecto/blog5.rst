@@ -1,7 +1,7 @@
 Blog 5: Instalación y configuración de un servidor Web: módulo userdir
 ======================================================================
 
-Vamos a añadir nuevas funcionalidaes a nuestro servidor web:
+Vamos a añadir nuevas funcionalidades a nuestro servidor web:
 
 	* Cada uno de los profesores puede gestionar su propia página web, para ello activa el módulo ``mod_userdir``.
 
