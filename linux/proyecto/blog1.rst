@@ -9,6 +9,8 @@ Esquema de red
 
 Vamos a utilizar VirualBox para simular las máquinas que necesitamos en nuestro esquema de trabajo, en nuestro proyecto vamos a necesitar 3 máquinas virtuales:
 
+.. image:: https://github.com/josedom24/serviciosgm_doc/raw/master/linux/proyecto/img/esquema.png
+
     * Un servidor, donde instalaremos Debian 8.0
     * Un cliente, donde se instalará Windows 7
     * Un cliente, donde se instalará una distribución de Linux
