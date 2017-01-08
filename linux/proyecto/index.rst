@@ -7,4 +7,4 @@ Tareas
 .. toctree::
 
    blog
-   
+   blog1  
