@@ -48,8 +48,10 @@ Modificamos el fichero ``/etc/sysctl.conf`` descomentando la siguiente línea::
 
 Para que nuestros clientes tengan acceso a internet, debemos configurar el fichero ``/etc/network/interfaces`` y añadir las siguientes líneas::
 
-    allow-hotplug eth1 
-    iface eth1 inet static 
+    allow-hotplug eth0
+    iface eth0 inet static
+    ...
+    ...
     ...
     up iptables -t nat -A POSTROUTING -o eth0 -s 192.168.1.0/24 -j MASQUERADE
     down iptables -t nat -D POSTROUTING -o eth0 -s 192.168.1.0/24 -j MASQUERADE
