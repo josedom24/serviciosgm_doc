@@ -8,8 +8,7 @@ Para facilitar el acceso al servidor hemos instalado un servidor ftp proftpd, co
 
 FTP
 
-    Explica la modificación en el servidor DNS para que los usuarios puedan acceder al nombre ftp.dominio.com
-    Explica como se instala el servidor proftpd y la configuración que necesita.
-    Muestra un acceso autentificado al servidor con un cliente gráfico.
-    Muestra un acceso anónimo al servidor con un cliente gráfico.
-
+    1. Explica la modificación en el servidor DNS para que los usuarios puedan acceder al nombre ftp.dominio.com
+    2. Explica como se instala el servidor proftpd y la configuración que necesita.
+    3. Muestra un acceso autentificado al servidor con un cliente gráfico.
+    4. Muestra un acceso anónimo al servidor con un cliente gráfico.

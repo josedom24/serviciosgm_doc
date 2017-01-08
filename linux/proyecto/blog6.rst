@@ -1,4 +1,4 @@
-Blog 6:Instalación y configuración de un servidor Web: LAMP
+Blog 6: Instalación y configuración de un servidor Web: LAMP
 ===========================================================
 
 Vamos a añadir nuevas funcionalidades a nuestro servidor web:
