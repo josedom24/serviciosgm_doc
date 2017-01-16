@@ -41,9 +41,9 @@ En la parte principal podemos configurar los siguientes parámetros, que más ta
     * ``default-lease-time``: Tiempo de renovación de la concesión
     * ``option routers``: Indicamos la dirección red de la puerta de enlace que se utiliza para salir a internet.
     * ``option domain-name-server``: Se pone las direcciones IP de los servidores DNS que va a utilizar el cliente.
-    * ``option domain­-name``: Nombre del dominio que se manda al cliente.
+    * ``option domain-name``: Nombre del dominio que se manda al cliente.
     * ``option subnet­mask``: Subred enviada a los clientes.
-    * ``option broadcast-­address``: Dirección de difusión de la red.
+    * ``option broadcast-address``: Dirección de difusión de la red.
 
 Al indicar una sección subnet tenemos que indicar la dirección de la red y la mascara de red y entre llaves podemos poner los siguientes parámetros:
 
@@ -55,7 +55,7 @@ Ejemplo de configuración de la sección subnet puede ser::
 	subnet 192.168.0.0 netmask 255.255.255.0 {
 	  range 192.168.0.60 192.168.0.90;
 	  option routers 192.168.0.254;
-	  option domain-­nam-e­servers 80.58.0.33, 80.58.32.9;
+	  option domain-name-servers 80.58.0.33, 80.58.32.9;
 	}
 
 Reinciciamos el servidor dhcp::
