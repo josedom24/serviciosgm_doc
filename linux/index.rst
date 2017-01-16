@@ -7,7 +7,7 @@ En este apartado vamos a trabajar con un servidor con un sistema operativo GNU/L
 
    repaso/index
    proyecto/index
-   #hcp/index
+   dhcp/index
    #web/index
    #dns/index
    #ftp/index   
