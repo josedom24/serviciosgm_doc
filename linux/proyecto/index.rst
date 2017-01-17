@@ -8,3 +8,4 @@ Tareas
 
    blog
    blog1  
+   blog2
