@@ -11,12 +11,12 @@ Para ello hay que seguir los siguientes pasos:
 
 1. En el fichero de configuración de la página ``www.iesgn.org``, ``/etc/apache2/sites-available/iesgn.conf`` crea las siguientes líneas::
 
-  <Directory /var/www/iesgn/profesores/>
-    AuthType basic
-    AuthName "Página privada salo para profesores"
-    AuthUserFile /etc/apache2/password
-    Require user pepe
-  </Directory>
+    <Directory /var/www/iesgn/profesores/>
+      AuthType basic
+      AuthName "Página privada salo para profesores"
+      AuthUserFile /etc/apache2/password
+      Require user pepe
+    </Directory>
 
 Esto quiere decir que para acceder al directorio ``/var/www/iesgn/profesores/`` se necesita autentificación.
 
@@ -28,8 +28,8 @@ Reiniciamos el servidor apache.
 
 2. Tenemos que crear el fichero de contraseña para los usuarios que tienen permiso. Para ello::
   
-  cd /etc/apache2
-  htpasswd -c password pepe
+    cd /etc/apache2
+    htpasswd -c password pepe
 
 Esta instrucción pide la contraseña para el usuario pepe y la guarda en el fichero ``password``, la opción ``-c`` crea el fichero.
 
