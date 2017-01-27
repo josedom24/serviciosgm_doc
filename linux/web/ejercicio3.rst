@@ -45,3 +45,4 @@ Esta instrucción pide la contraseña para el usuario pepe y la guarda en el fic
   4. La página ``www.departamentosgn.org`` necesita autentificación y sólo puede acceder el directo y el profesor.
   5. La página ``www.departamentosgn.org/equipodirectivo``, necesita autentificación y sólo el director puede entrar.
 
+
