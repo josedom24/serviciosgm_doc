@@ -12,7 +12,8 @@ Un ejemplo de fichero de zona inversa puede ser el siguiente::
 	                                21600      ; minimum (6 hours)
 	                                )
 	@                    IN NS      papion.gonzalonazareno.org.	
-
+	
+	$ORIGIN 1.168.192.in-addr.arpa.
 	4                    IN PTR     papion.gonzalonazareno.org.
 	2                    IN PTR     babuino.gonzalonazareno.org.
 	5                    IN PTR     correo.gonzalonazareno.org.
