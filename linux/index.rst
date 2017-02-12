@@ -10,6 +10,6 @@ En este apartado vamos a trabajar con un servidor con un sistema operativo GNU/L
    dhcp/index
    web/index
    dns/index
-   #ftp/index   
+   ftp/index   
    #acceso/index
    #correo/index
