@@ -10,7 +10,8 @@ Queremos crear un ftp anónimo que acceda al directorio /var/ftp, para ello hay 
 
 2. Podemos tener los dos mecanismos simultáneamente: autentificación y anónimo. Si no queremos que puedan acceder los usuario de manera autentificada, tengo que poner el fichero de configuración (``/etc/proftpd/proftpd.conf``)::
 
-	<Limit LOGIN>
+    <Limit LOGIN>
+      AllowUser ftp
       DenyAll 
     </Limit>
 
