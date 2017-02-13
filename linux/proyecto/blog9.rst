@@ -1,4 +1,4 @@
-Blog 8: Instalación y configuración del acceso remoto
+Blog 9: Instalación y configuración del acceso remoto
 =====================================================
 
 Para facilitar la administración por parte de los técnicos de los clientes linux vamos a configurar el sistema para que se pueda acceder remotamente de dos formas:
