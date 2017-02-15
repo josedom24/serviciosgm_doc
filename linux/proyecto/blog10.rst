@@ -11,7 +11,7 @@ Queremos ofrecer en nuestro sistema el servicio de correo electrónico para perm
 
 .. warning::
 
-    1. Describe la instlación y configuración del servidor postfix.
+    1. Describe la instalación y configuración del servidor postfix.
     2. Muestra una prueba de envío y recepción de correo desde el servidor usando el comando mail. Muestra también la salida del log.
     3. Explica la instalación y configuración del servidor pop e imap.
     4. Muestra la configuración del cliente de correos (servidor de correo saliente y servidor de correos pop).
