@@ -11,5 +11,5 @@ En este apartado vamos a trabajar con un servidor con un sistema operativo GNU/L
    web/index
    dns/index
    ftp/index   
-   #acceso/index
+   ssh/index
    #correo/index
