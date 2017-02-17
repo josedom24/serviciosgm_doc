@@ -1,4 +1,5 @@
 Ejercicio 1: Gestión remota usando SSH
+======================================
 
 **Instalación y configuración del servidor ssh**
 
