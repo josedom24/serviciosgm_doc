@@ -12,4 +12,4 @@ En este apartado vamos a trabajar con un servidor con un sistema operativo GNU/L
    dns/index
    ftp/index   
    ssh/index
-   #correo/index
+   correo/index
