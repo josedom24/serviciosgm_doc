@@ -43,7 +43,7 @@ Si estamos usando un cliente Windows tenemos que usar un cliente ssh, el más co
 
 **Ejecución remota de aplicaciones gráficas**
 
-Mediante ssh existe la posibilidad de ejecutar aplicaciones gráficas en el servidor y manejarlas y visualizarlas en el cliente. El servidor ssh deberá tener activada la redirección del protocolo X, es decir, deberá tener el siguiente parámetro en el archivo de configuración ``/etc/ssh/ssh_config``::
+Mediante ssh existe la posibilidad de ejecutar aplicaciones gráficas en el servidor y manejarlas y visualizarlas en el cliente. El servidor ssh deberá tener activada la redirección del protocolo X, es decir, deberá tener el siguiente parámetro en el archivo de configuración ``/etc/ssh/sshd_config``::
 
     ForwardX11 yes
 
