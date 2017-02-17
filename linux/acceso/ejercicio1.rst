@@ -72,11 +72,8 @@ Por ejemplo, para copiar un archivo que tengo en mi directorio personal del clie
 .. warning::
 
 	1. Instala el servidor ssh en nuestro servidor, y comprueba lo siguiente:
-
     * Modificación en el fichero de configuración para no permitir el acceso del ``root``.
     * Accede al servidor con un usuario que no sea root.
     * Accede al servidor desde un cliente Windows con putty.
-
-	2. Modifica el servidor ssh para poder ejecutar aplicaciones gráficas (hazlo en el cliente ubuntu) accede al servidor con la posibilidad de ejecutar aplicaciones gráfica. Ejecuta una aplicación gráfica.
-
-	3. Copia un fichero desde el escritorio de tu cliente a la carpeta personal de un usuario del servidor.
+    2. Modifica el servidor ssh para poder ejecutar aplicaciones gráficas (hazlo en el cliente ubuntu) accede al servidor con la posibilidad de ejecutar aplicaciones gráfica. Ejecuta una aplicación gráfica.
+    3. Copia un fichero desde el escritorio de tu cliente a la carpeta personal de un usuario del servidor.
