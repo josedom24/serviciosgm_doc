@@ -1,5 +1,5 @@
-Servidores de acceso remoto
-===========================
+Acceso remoto
+=============
 
 .. toctree::	
    
