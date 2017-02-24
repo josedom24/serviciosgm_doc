@@ -47,15 +47,15 @@ Creamos una nueva cuenta de correo con las siguientes características:
 
 *Información de la cuenta*
 
-.. img:: img/mail1.png
+.. image:: img/mail1.png
 
 *Servidor POP*
 
-.. img:: img/mail2.png
+.. image:: img/mail2.png
 
 *Servidor SMTP*
 
-.. img:: img/mail3.png
+.. image:: img/mail3.png
 
 .. warning::
 
