@@ -1,5 +1,5 @@
-Servidor de correo remoto
-=========================
+Servidor de correo
+==================
 
 .. toctree::	
    
