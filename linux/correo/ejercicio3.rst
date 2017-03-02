@@ -13,7 +13,7 @@ Para acceder a los correos desde cualquier ordenador de nuestra red local, vamos
 
 A continuación tenemos que añadir a la configuración de apache2 el nuevos sitio virtual, para ello tenemos que crear un nuevo enlace simbólico dentro de la carpeta sites-enabled, de la siguiente forma::
 
-    cd /etc/apache2/conf.d
+    cd /etc/apache2/conf-enabled
     ln -s /etc/squirrelmail/apache.conf correo.conf
 
 Y por último inicializamos el servidor apache.
