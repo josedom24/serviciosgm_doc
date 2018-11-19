@@ -14,32 +14,32 @@ Para conseguir estos dos sitios virtuales debes seguir los siguientes pasos:
 
 1. Los ficheros de configuración de los sitios webs se encuentran en el directorio ``/etc/apache2/sites-available``, por defecto hay dos ficheros, uno se llama ``000-default.conf`` que es la configuración del sitio web por defecto. Necesitamos tener dos ficheros para realizar la configuración de los dos sitios virtuales, para ello vamos a copiar el fichero ``000-default.conf``::
 
- 	cd /etc/apache2/sites-available
- 	cp 000-default.conf iesgn.conf
- 	cp 000-default.conf departamentos.conf
+     	cd /etc/apache2/sites-available
+     	cp 000-default.conf iesgn.conf
+     	cp 000-default.conf departamentos.conf
 
-De esta manera tendremos un fichero llamado ``iesgn.conf`` para realizar la configuración del sitio web ``www.iesgn.org``, y otro llamado ``departamentos.conf`` para el sitio web ``www.departamentosgn.org``.
+    De esta manera tendremos un fichero llamado ``iesgn.conf`` para realizar la configuración del sitio web ``www.iesgn.org``, y otro llamado ``departamentos.conf`` para el sitio web ``www.departamentosgn.org``.
 
 2. Modificamos el fichero ``iesgn.conf``, donde vamos a añadir la siguiente línea::
 
-	ServerName www.iesgn.org
+	    ServerName www.iesgn.org
 
-Realiza los cambios similares al fichero ``departamentos.conf``.
+    Realiza los cambios similares al fichero ``departamentos.conf``.
 
 3. No es suficiente crear los ficheros de configuración de cada sitio web, es necesario crear un enlace simbólico a estos ficheros dentro del directorio ``/etc/apache2/sites-enabled``, para ello::
 
-	a2ensite iesgn
-	a2ensite departamentos
+    	a2ensite iesgn
+	    a2ensite departamentos
 
-La creación de los elaces simbólicos se puede hacer con la instrucción ``a2ensite nombre_fichero_configuracion``, para deshabilitar el sitio tenemos que borrar el enlace simbólico o usar la instrucción ``a2dissite nombre_fichero_configuracion``.
+    La creación de los enlaces simbólicos se puede hacer con la instrucción ``a2ensite nombre_fichero_configuracion``, para deshabilitar el sitio tenemos que borrar el enlace simbólico o usar la instrucción ``a2dissite nombre_fichero_configuracion``.
 
 4. Crea los directorios y los ficheros ``index.html`` necesarios y reiniciamos el servicio::
 
-	systemctl reload apache2
+	    systemctl reload apache2
 
 5. Para terminar lo único que tendremos que hacer es cambiar el fichero ``hosts`` en los clientes y poner dos nuevas líneas donde se haga la conversión entre los dos nombre de dominio y la dirección IP del servidor.
 
-**Cambiar el DocumentRoot**
+## Cambiar el DocumentRoot
 
 En los VirtualHost que hemos creado los ``DocumentRoot`` han sido subdirectorios de ``/var/www``. Para que esto funcione de forma adecuada en el fichero de configuración del servidor web (``apache2.conf``) podemos encontrar las siguientes líneas::
 
