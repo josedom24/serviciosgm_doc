@@ -4,9 +4,9 @@ El objetivo de esta práctica es que los usuarios locales del equipo puedan acce
 
 Para ello sigue los siguiente pasos:
 
-1.Crea dos usuarios locales: Jose y Maria. (Recuerda que para crear usuario utiliza la instrucción adduser)
+1. Crea dos usuarios locales: Jose y Maria. (Recuerda que para crear usuario utiliza la instrucción `adduser`)
 
-2. Instala y configura el servidor proFTPd para que los usuarios puedan acceder a sus directorios personales::
+2. Instala y configura el servidor proFTPd para que los usuarios puedan acceder a sus directorios personales:
 
  	    apt-get install proftpd
 
@@ -16,6 +16,6 @@ Accede a ``ftp.iesgn.org``, comprueba que tienes que autentificarte y comprueba 
 
 ### Ejercicios
 	
-    1. Realiza las configuraciones necesarias para configurar un ftp autentificado.
-    2. Accede desde el cliente ftp desde linux y windows
+1. Realiza las configuraciones necesarias para configurar un ftp autentificado.
+2. Accede desde el cliente ftp desde linux y windows
 
