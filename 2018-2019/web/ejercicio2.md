@@ -1,14 +1,13 @@
-Ejercicio: Configuración de sitios web virtuales usando Apache
-==============================================================
+# Ejercicio: Configuración de sitios web virtuales usando Apache
 
 El objetivo de esta práctica es la puesta en marcha de dos sitios web utilizando el mismo servidor web apache. Hay que tener en cuenta lo siguiente:
 
-1. Cada sitio web tendra nombres distintos.
+1. Cada sitio web tendrá nombres distintos.
 2. Cada sitio web compartirán la misma dirección IP y el mismo puerto (80).
 
 Queremos construir en nuestro servidor web apache dos sitios web con las siguientes características:
 
-* El nombre de dominio del primero será ``www.iesgn.org``, su directorio base será ``/var/www/iesgn`` y contendrá una página llamada ``index.html``, donde sólo se verá una bienvenida a la página del insituto Gonzalo Nazareno.
+* El nombre de dominio del primero será ``www.iesgn.org``, su directorio base será ``/var/www/iesgn`` y contendrá una página llamada ``index.html``, donde sólo se verá una bienvenida a la página del instituto Gonzalo Nazareno.
 * En el segundo sitio vamos a crear una página donde se pondrán noticias por parte de los departamento, el nombre de este sitio será ``www.departamentosgn.org``, y su directorio base será ``/var/www/departamentos``. En este sitio sólo tendremos una página inicial ``index.html``, dando la bienvenida a la página de los departamentos del instituto.
 
 Para conseguir estos dos sitios virtuales debes seguir los siguientes pasos:
@@ -58,13 +57,11 @@ Si queremos cambiar de directorios y por ejemplo guardar los VirtualHost en el d
       Require all granted
     </Directory>
 
-.. warning::
+## Ejercicios
 
-	**Ejercicios**
+Queremos construir en nuestro servidor web Apache dos sitios web con las siguientes características:
 
-	Queremos construir en nuestro servidor web Apache dos sitios web con las siguientes características:
+1. El nombre de dominio del primero será ``www.iesgn.com``, su directorio base será ``/var/www/iesgn`` y contendrá una página llamada ``index.html``, donde sólo se verá una bienvenida a la página del insituto Gonzalo Nazareno.
+2. En el segundo sitio vamos a crear una página donde se pondrán noticias por parte de los departamento, el nombre de este sitio será ``www.departamentosgn.com``, y su directorio base será ``/var/www/departamentos``. En este sitio sólo tendremos una página inicial ``index.html``, dando la bienvenida a la página de los departamentos del instituto.
 
-    1. El nombre de dominio del primero será ``www.iesgn.com``, su directorio base será ``/var/www/iesgn`` y contendrá una página llamada ``index.html``, donde sólo se verá una bienvenida a la página del insituto Gonzalo Nazareno.
-    2. En el segundo sitio vamos a crear una página donde se pondrán noticias por parte de los departamento, el nombre de este sitio será ``www.departamentosgn.com``, y su directorio base será ``/var/www/departamentos``. En este sitio sólo tendremos una página inicial ``index.html``, dando la bienvenida a la página de los departamentos del instituto.
-
-	Modifica el fichero ``hosts`` en los clientes y en el servidor para que se pueda acceder a los sitios web creados.
+Modifica el fichero ``hosts`` en los clientes y en el servidor para que se pueda acceder a los sitios web creados.
