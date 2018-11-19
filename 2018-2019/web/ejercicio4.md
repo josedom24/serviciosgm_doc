@@ -23,39 +23,39 @@ Durante la instalación del servicio se nos pedirá la contraseña del usuario `
 
 Para acceder al servidor mysql::
 
-  mysql -u root -p
+    mysql -u root -p
 
 Muestra las bases de datos::
 
-  mysql>show databases; 
+    mysql>show databases; 
 
 Usamos la base de datos indicadas::
 
-  mysql>use nombre_base_datos; 
+    mysql>use nombre_base_datos; 
 
 Muestra las tablas de esa base de datos::
 
-  mysql>show tables; 
+    mysql>show tables; 
 
 Muestra los campos de la tabla indicada::
 
-  mysql>desc nombre_tabla; 
+    mysql>desc nombre_tabla; 
 
 Muestra los registras de la tabla indicada::
 
-  mysql>select * from nombre_tabla; 
+    mysql>select * from nombre_tabla; 
 
 Crea una base de datos con el nombre indicado::
 
-  mysql>create database nombre_base_datos;
+    mysql>create database nombre_base_datos;
 
 Crea un usuario con el nombre indicado::
 
-  mysql>create user usuario; 
+    mysql>create user usuario; 
 
 Da permiso a usuario con la contraseña indicada, para que maneje la base de datos indicada::
 
-  mysql>GRANT ALL ON nombre_base_datos.* TO usuario IDENTIFIED BY 'contraseña_usuario'; 
+    mysql>GRANT ALL ON nombre_base_datos.* TO usuario IDENTIFIED BY 'contraseña_usuario'; 
 
 **PHP7**
 
