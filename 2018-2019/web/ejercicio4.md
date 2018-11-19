@@ -15,11 +15,11 @@ Ahora vamos a instalar los paquetes necesarios para tener un entorno LAMP.
 
   ``apt-get install apache2``
 
-**MySQL**
+**mariaDB**
 
   ``apt install mariadb-client mariadb-server``
 
-Durante la instalación del servicio se nos pedirá la contraseña del usuario ``root`` del servidor mysql.
+Durante la instalación del servicio se nos pedirá la contraseña del usuario ``root`` del servidor mariaDB.
 
 Para acceder al servidor mysql::
 
