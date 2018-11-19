@@ -4,3 +4,4 @@ En este apartado vamos a trabajar con un servidor con un sistema operativo GNU/L
 
 * [Servidor DHCP](dhcp/README.md)
 * [Servidor WEB](web/README.md)
+* [Servidor DNS](dns/README.md)
